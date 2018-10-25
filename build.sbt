@@ -17,5 +17,3 @@ libraryDependencies += "com.holdenkarau" %% "spark-testing-base" % "2.3.1_0.10.0
 
 fork in Test := true
 javaOptions ++= Seq("-Xms512M", "-Xmx2048M", "-XX:MaxPermSize=2048M", "-XX:+CMSClassUnloadingEnabled")
-
-fullClasspath in Runtime := (fullClasspath in Compile).value
